@@ -1,0 +1,33 @@
+
+public class Bullet {
+	int x;
+	int y;
+	int direction;
+
+	public Bullet(int x, int y, int d) {
+		this.x = x;
+		this.y = y;
+		this.direction = d;
+	}
+
+	public void move() {
+		if (direction == 0) {
+		y = y - 10;
+	}
+	if (direction == 1) {
+		x = x + 10;
+	}
+	if (direction == 2) {
+		y = y + 10;
+	}
+	if (direction == 3)
+		x = x - 10;
+}
+	
+	public void draw() {
+		Zen.setColor(255, 0, 0);
+		Zen.fillOval(10, 10, 10, 10);
+	}
+}
+
+
